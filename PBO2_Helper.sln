@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PBO2_Helper", "PBO2_Helper\PBO2_Helper.csproj", "{AD7AE094-2B9B-437E-AEAF-5346E9CF8DAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD7AE094-2B9B-437E-AEAF-5346E9CF8DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD7AE094-2B9B-437E-AEAF-5346E9CF8DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD7AE094-2B9B-437E-AEAF-5346E9CF8DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD7AE094-2B9B-437E-AEAF-5346E9CF8DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFBD4597-D770-415C-A2F7-F42AAB061230}
+	EndGlobalSection
+EndGlobal
