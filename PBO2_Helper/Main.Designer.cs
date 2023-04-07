@@ -28,250 +28,373 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.selectPboButton = new System.Windows.Forms.Button();
-            this.ApplyButton = new System.Windows.Forms.Button();
-            this.core_1_textBox = new System.Windows.Forms.TextBox();
-            this.core_2_textBox = new System.Windows.Forms.TextBox();
-            this.core_3_textBox = new System.Windows.Forms.TextBox();
-            this.core_4_textBox = new System.Windows.Forms.TextBox();
-            this.core_5_textBox = new System.Windows.Forms.TextBox();
-            this.core_6_textBox = new System.Windows.Forms.TextBox();
-            this.core_7_textBox = new System.Windows.Forms.TextBox();
-            this.core_8_textBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.applyToCore1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.CoreBox = new System.Windows.Forms.GroupBox();
-            this.DeleteTaskButton = new System.Windows.Forms.Button();
-            this.CoreBox.SuspendLayout();
-            this.SuspendLayout();
+            selectPboButton = new Button();
+            ApplyButton = new Button();
+            core_1_textBox = new TextBox();
+            core_2_textBox = new TextBox();
+            core_3_textBox = new TextBox();
+            core_4_textBox = new TextBox();
+            core_5_textBox = new TextBox();
+            core_6_textBox = new TextBox();
+            core_7_textBox = new TextBox();
+            core_8_textBox = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            applyToCore1 = new Button();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            CoreBox = new GroupBox();
+            DeleteTaskButton = new Button();
+            AdvancedOptionCheckBox = new CheckBox();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            ppt_textBox = new TextBox();
+            tdc_textBox = new TextBox();
+            edc_textBox = new TextBox();
+            fmax_textBox = new TextBox();
+            advanceGroupBox = new GroupBox();
+            CoreBox.SuspendLayout();
+            advanceGroupBox.SuspendLayout();
+            SuspendLayout();
             // 
             // selectPboButton
             // 
-            this.selectPboButton.Location = new System.Drawing.Point(12, 12);
-            this.selectPboButton.Name = "selectPboButton";
-            this.selectPboButton.Size = new System.Drawing.Size(214, 51);
-            this.selectPboButton.TabIndex = 0;
-            this.selectPboButton.Text = "1. Select \"PBO2 tuner.exe\"";
-            this.selectPboButton.UseVisualStyleBackColor = true;
-            this.selectPboButton.Click += new System.EventHandler(this.selectPboButton_Click);
+            selectPboButton.Dock = DockStyle.Top;
+            selectPboButton.Location = new Point(0, 0);
+            selectPboButton.Name = "selectPboButton";
+            selectPboButton.Size = new Size(244, 51);
+            selectPboButton.TabIndex = 0;
+            selectPboButton.Text = "1. Select \"PBO2 tuner.exe\"";
+            selectPboButton.UseVisualStyleBackColor = true;
+            selectPboButton.Click += selectPboButton_Click;
             // 
             // ApplyButton
             // 
-            this.ApplyButton.Enabled = false;
-            this.ApplyButton.Location = new System.Drawing.Point(12, 69);
-            this.ApplyButton.Name = "ApplyButton";
-            this.ApplyButton.Size = new System.Drawing.Size(214, 42);
-            this.ApplyButton.TabIndex = 1;
-            this.ApplyButton.Text = "2. Add Task";
-            this.ApplyButton.UseVisualStyleBackColor = true;
-            this.ApplyButton.Click += new System.EventHandler(this.ApplyButton_Click);
+            ApplyButton.Dock = DockStyle.Top;
+            ApplyButton.Enabled = false;
+            ApplyButton.Location = new Point(0, 51);
+            ApplyButton.Name = "ApplyButton";
+            ApplyButton.Size = new Size(244, 42);
+            ApplyButton.TabIndex = 1;
+            ApplyButton.Text = "2. Add Task";
+            ApplyButton.UseVisualStyleBackColor = true;
+            ApplyButton.Click += ApplyButton_Click;
             // 
             // core_1_textBox
             // 
-            this.core_1_textBox.Location = new System.Drawing.Point(75, 27);
-            this.core_1_textBox.Name = "core_1_textBox";
-            this.core_1_textBox.Size = new System.Drawing.Size(74, 23);
-            this.core_1_textBox.TabIndex = 2;
-            this.core_1_textBox.Text = "-30";
+            core_1_textBox.Location = new Point(75, 27);
+            core_1_textBox.Name = "core_1_textBox";
+            core_1_textBox.Size = new Size(57, 23);
+            core_1_textBox.TabIndex = 2;
+            core_1_textBox.Text = "-30";
             // 
             // core_2_textBox
             // 
-            this.core_2_textBox.Location = new System.Drawing.Point(75, 56);
-            this.core_2_textBox.Name = "core_2_textBox";
-            this.core_2_textBox.Size = new System.Drawing.Size(127, 23);
-            this.core_2_textBox.TabIndex = 3;
-            this.core_2_textBox.Text = "-30";
+            core_2_textBox.Location = new Point(75, 56);
+            core_2_textBox.Name = "core_2_textBox";
+            core_2_textBox.Size = new Size(127, 23);
+            core_2_textBox.TabIndex = 3;
+            core_2_textBox.Text = "-30";
             // 
             // core_3_textBox
             // 
-            this.core_3_textBox.Location = new System.Drawing.Point(75, 85);
-            this.core_3_textBox.Name = "core_3_textBox";
-            this.core_3_textBox.Size = new System.Drawing.Size(127, 23);
-            this.core_3_textBox.TabIndex = 4;
-            this.core_3_textBox.Text = "-30";
+            core_3_textBox.Location = new Point(75, 85);
+            core_3_textBox.Name = "core_3_textBox";
+            core_3_textBox.Size = new Size(127, 23);
+            core_3_textBox.TabIndex = 4;
+            core_3_textBox.Text = "-30";
             // 
             // core_4_textBox
             // 
-            this.core_4_textBox.Location = new System.Drawing.Point(75, 114);
-            this.core_4_textBox.Name = "core_4_textBox";
-            this.core_4_textBox.Size = new System.Drawing.Size(127, 23);
-            this.core_4_textBox.TabIndex = 5;
-            this.core_4_textBox.Text = "-30";
+            core_4_textBox.Location = new Point(75, 114);
+            core_4_textBox.Name = "core_4_textBox";
+            core_4_textBox.Size = new Size(127, 23);
+            core_4_textBox.TabIndex = 5;
+            core_4_textBox.Text = "-30";
             // 
             // core_5_textBox
             // 
-            this.core_5_textBox.Location = new System.Drawing.Point(75, 143);
-            this.core_5_textBox.Name = "core_5_textBox";
-            this.core_5_textBox.Size = new System.Drawing.Size(127, 23);
-            this.core_5_textBox.TabIndex = 6;
-            this.core_5_textBox.Text = "-30";
+            core_5_textBox.Location = new Point(75, 143);
+            core_5_textBox.Name = "core_5_textBox";
+            core_5_textBox.Size = new Size(127, 23);
+            core_5_textBox.TabIndex = 6;
+            core_5_textBox.Text = "-30";
             // 
             // core_6_textBox
             // 
-            this.core_6_textBox.Location = new System.Drawing.Point(75, 172);
-            this.core_6_textBox.Name = "core_6_textBox";
-            this.core_6_textBox.Size = new System.Drawing.Size(127, 23);
-            this.core_6_textBox.TabIndex = 7;
-            this.core_6_textBox.Text = "-30";
+            core_6_textBox.Location = new Point(75, 172);
+            core_6_textBox.Name = "core_6_textBox";
+            core_6_textBox.Size = new Size(127, 23);
+            core_6_textBox.TabIndex = 7;
+            core_6_textBox.Text = "-30";
             // 
             // core_7_textBox
             // 
-            this.core_7_textBox.Location = new System.Drawing.Point(75, 201);
-            this.core_7_textBox.Name = "core_7_textBox";
-            this.core_7_textBox.Size = new System.Drawing.Size(127, 23);
-            this.core_7_textBox.TabIndex = 8;
-            this.core_7_textBox.Text = "-30";
+            core_7_textBox.Location = new Point(75, 201);
+            core_7_textBox.Name = "core_7_textBox";
+            core_7_textBox.Size = new Size(127, 23);
+            core_7_textBox.TabIndex = 8;
+            core_7_textBox.Text = "-30";
             // 
             // core_8_textBox
             // 
-            this.core_8_textBox.Location = new System.Drawing.Point(75, 230);
-            this.core_8_textBox.Name = "core_8_textBox";
-            this.core_8_textBox.Size = new System.Drawing.Size(127, 23);
-            this.core_8_textBox.TabIndex = 9;
-            this.core_8_textBox.Text = "-30";
+            core_8_textBox.Location = new Point(75, 230);
+            core_8_textBox.Name = "core_8_textBox";
+            core_8_textBox.Size = new Size(127, 23);
+            core_8_textBox.TabIndex = 9;
+            core_8_textBox.Text = "-30";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 15);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Core 1:";
+            label1.AutoSize = true;
+            label1.Location = new Point(20, 37);
+            label1.Name = "label1";
+            label1.Size = new Size(46, 15);
+            label1.TabIndex = 10;
+            label1.Text = "Core 1:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 15);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Core 2:";
+            label2.AutoSize = true;
+            label2.Location = new Point(20, 66);
+            label2.Name = "label2";
+            label2.Size = new Size(46, 15);
+            label2.TabIndex = 11;
+            label2.Text = "Core 2:";
             // 
             // applyToCore1
             // 
-            this.applyToCore1.Location = new System.Drawing.Point(155, 27);
-            this.applyToCore1.Name = "applyToCore1";
-            this.applyToCore1.Size = new System.Drawing.Size(47, 23);
-            this.applyToCore1.TabIndex = 12;
-            this.applyToCore1.Text = "★";
-            this.applyToCore1.UseVisualStyleBackColor = true;
-            this.applyToCore1.Click += new System.EventHandler(this.applyToCore1_Click);
+            applyToCore1.Location = new Point(138, 27);
+            applyToCore1.Name = "applyToCore1";
+            applyToCore1.Size = new Size(64, 23);
+            applyToCore1.TabIndex = 12;
+            applyToCore1.Text = "Set All";
+            applyToCore1.UseVisualStyleBackColor = true;
+            applyToCore1.Click += applyToCore1_Click;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 88);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 15);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Core 3:";
+            label3.AutoSize = true;
+            label3.Location = new Point(20, 95);
+            label3.Name = "label3";
+            label3.Size = new Size(46, 15);
+            label3.TabIndex = 13;
+            label3.Text = "Core 3:";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 117);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 15);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Core 4:";
+            label4.AutoSize = true;
+            label4.Location = new Point(20, 124);
+            label4.Name = "label4";
+            label4.Size = new Size(46, 15);
+            label4.TabIndex = 14;
+            label4.Text = "Core 4:";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 146);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 15);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Core 5:";
+            label5.AutoSize = true;
+            label5.Location = new Point(20, 153);
+            label5.Name = "label5";
+            label5.Size = new Size(46, 15);
+            label5.TabIndex = 15;
+            label5.Text = "Core 5:";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(23, 175);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 15);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Core 6:";
+            label6.AutoSize = true;
+            label6.Location = new Point(20, 182);
+            label6.Name = "label6";
+            label6.Size = new Size(46, 15);
+            label6.TabIndex = 16;
+            label6.Text = "Core 6:";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(23, 204);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 15);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Core 7:";
+            label7.AutoSize = true;
+            label7.Location = new Point(20, 211);
+            label7.Name = "label7";
+            label7.Size = new Size(46, 15);
+            label7.TabIndex = 17;
+            label7.Text = "Core 7:";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(23, 233);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 15);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Core 8:";
+            label8.AutoSize = true;
+            label8.Location = new Point(20, 240);
+            label8.Name = "label8";
+            label8.Size = new Size(46, 15);
+            label8.TabIndex = 18;
+            label8.Text = "Core 8:";
             // 
             // CoreBox
             // 
-            this.CoreBox.Controls.Add(this.label1);
-            this.CoreBox.Controls.Add(this.label8);
-            this.CoreBox.Controls.Add(this.core_1_textBox);
-            this.CoreBox.Controls.Add(this.label7);
-            this.CoreBox.Controls.Add(this.core_2_textBox);
-            this.CoreBox.Controls.Add(this.label6);
-            this.CoreBox.Controls.Add(this.core_3_textBox);
-            this.CoreBox.Controls.Add(this.label5);
-            this.CoreBox.Controls.Add(this.core_4_textBox);
-            this.CoreBox.Controls.Add(this.label4);
-            this.CoreBox.Controls.Add(this.core_5_textBox);
-            this.CoreBox.Controls.Add(this.label3);
-            this.CoreBox.Controls.Add(this.core_6_textBox);
-            this.CoreBox.Controls.Add(this.applyToCore1);
-            this.CoreBox.Controls.Add(this.core_7_textBox);
-            this.CoreBox.Controls.Add(this.label2);
-            this.CoreBox.Controls.Add(this.core_8_textBox);
-            this.CoreBox.Location = new System.Drawing.Point(12, 117);
-            this.CoreBox.Name = "CoreBox";
-            this.CoreBox.Size = new System.Drawing.Size(214, 270);
-            this.CoreBox.TabIndex = 19;
-            this.CoreBox.TabStop = false;
-            this.CoreBox.Text = "Cores (Only Support 8Core CPU)";
+            CoreBox.Controls.Add(label1);
+            CoreBox.Controls.Add(label8);
+            CoreBox.Controls.Add(core_1_textBox);
+            CoreBox.Controls.Add(label7);
+            CoreBox.Controls.Add(core_2_textBox);
+            CoreBox.Controls.Add(label6);
+            CoreBox.Controls.Add(core_3_textBox);
+            CoreBox.Controls.Add(label5);
+            CoreBox.Controls.Add(core_4_textBox);
+            CoreBox.Controls.Add(label4);
+            CoreBox.Controls.Add(core_5_textBox);
+            CoreBox.Controls.Add(label3);
+            CoreBox.Controls.Add(core_6_textBox);
+            CoreBox.Controls.Add(applyToCore1);
+            CoreBox.Controls.Add(core_7_textBox);
+            CoreBox.Controls.Add(label2);
+            CoreBox.Controls.Add(core_8_textBox);
+            CoreBox.Dock = DockStyle.Top;
+            CoreBox.Location = new Point(0, 93);
+            CoreBox.Name = "CoreBox";
+            CoreBox.Padding = new Padding(0);
+            CoreBox.Size = new Size(244, 270);
+            CoreBox.TabIndex = 19;
+            CoreBox.TabStop = false;
+            CoreBox.Text = "Cores (Only Support 8Core CPU)";
             // 
             // DeleteTaskButton
             // 
-            this.DeleteTaskButton.Enabled = false;
-            this.DeleteTaskButton.Location = new System.Drawing.Point(12, 393);
-            this.DeleteTaskButton.Name = "DeleteTaskButton";
-            this.DeleteTaskButton.Size = new System.Drawing.Size(214, 42);
-            this.DeleteTaskButton.TabIndex = 20;
-            this.DeleteTaskButton.Text = "Delete Task";
-            this.DeleteTaskButton.UseVisualStyleBackColor = true;
-            this.DeleteTaskButton.Click += new System.EventHandler(this.DeleteTaskButton_Click);
+            DeleteTaskButton.Dock = DockStyle.Top;
+            DeleteTaskButton.Enabled = false;
+            DeleteTaskButton.Location = new Point(0, 524);
+            DeleteTaskButton.Name = "DeleteTaskButton";
+            DeleteTaskButton.Size = new Size(244, 42);
+            DeleteTaskButton.TabIndex = 20;
+            DeleteTaskButton.Text = "Delete Task";
+            DeleteTaskButton.UseVisualStyleBackColor = true;
+            DeleteTaskButton.Click += DeleteTaskButton_Click;
+            // 
+            // AdvancedOptionCheckBox
+            // 
+            AdvancedOptionCheckBox.AutoSize = true;
+            AdvancedOptionCheckBox.Dock = DockStyle.Top;
+            AdvancedOptionCheckBox.Location = new Point(0, 363);
+            AdvancedOptionCheckBox.Name = "AdvancedOptionCheckBox";
+            AdvancedOptionCheckBox.Padding = new Padding(10, 0, 0, 0);
+            AdvancedOptionCheckBox.Size = new Size(244, 19);
+            AdvancedOptionCheckBox.TabIndex = 21;
+            AdvancedOptionCheckBox.Text = "Advance";
+            AdvancedOptionCheckBox.UseVisualStyleBackColor = true;
+            AdvancedOptionCheckBox.CheckedChanged += AdvancedOptionCheckBox_CheckedChanged;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(26, 119);
+            label9.Name = "label9";
+            label9.Size = new Size(41, 15);
+            label9.TabIndex = 29;
+            label9.Text = "fmax :";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(34, 90);
+            label10.Name = "label10";
+            label10.Size = new Size(33, 15);
+            label10.TabIndex = 28;
+            label10.Text = "edc :";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(35, 61);
+            label11.Name = "label11";
+            label11.Size = new Size(31, 15);
+            label11.TabIndex = 27;
+            label11.Text = "tdc :";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(34, 32);
+            label12.Name = "label12";
+            label12.Size = new Size(32, 15);
+            label12.TabIndex = 26;
+            label12.Text = "ppt :";
+            // 
+            // ppt_textBox
+            // 
+            ppt_textBox.Location = new Point(75, 22);
+            ppt_textBox.Name = "ppt_textBox";
+            ppt_textBox.Size = new Size(127, 23);
+            ppt_textBox.TabIndex = 22;
+            ppt_textBox.Text = "95";
+            // 
+            // tdc_textBox
+            // 
+            tdc_textBox.Location = new Point(75, 51);
+            tdc_textBox.Name = "tdc_textBox";
+            tdc_textBox.Size = new Size(127, 23);
+            tdc_textBox.TabIndex = 23;
+            tdc_textBox.Text = "60";
+            // 
+            // edc_textBox
+            // 
+            edc_textBox.Location = new Point(75, 80);
+            edc_textBox.Name = "edc_textBox";
+            edc_textBox.Size = new Size(127, 23);
+            edc_textBox.TabIndex = 24;
+            edc_textBox.Text = "90";
+            // 
+            // fmax_textBox
+            // 
+            fmax_textBox.Location = new Point(75, 109);
+            fmax_textBox.Name = "fmax_textBox";
+            fmax_textBox.Size = new Size(127, 23);
+            fmax_textBox.TabIndex = 25;
+            fmax_textBox.Text = "0";
+            // 
+            // advanceGroupBox
+            // 
+            advanceGroupBox.Controls.Add(label9);
+            advanceGroupBox.Controls.Add(fmax_textBox);
+            advanceGroupBox.Controls.Add(label10);
+            advanceGroupBox.Controls.Add(edc_textBox);
+            advanceGroupBox.Controls.Add(label11);
+            advanceGroupBox.Controls.Add(tdc_textBox);
+            advanceGroupBox.Controls.Add(label12);
+            advanceGroupBox.Controls.Add(ppt_textBox);
+            advanceGroupBox.Dock = DockStyle.Top;
+            advanceGroupBox.Location = new Point(0, 382);
+            advanceGroupBox.Name = "advanceGroupBox";
+            advanceGroupBox.Padding = new Padding(0);
+            advanceGroupBox.Size = new Size(244, 142);
+            advanceGroupBox.TabIndex = 30;
+            advanceGroupBox.TabStop = false;
+            advanceGroupBox.Visible = false;
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(238, 446);
-            this.Controls.Add(this.DeleteTaskButton);
-            this.Controls.Add(this.CoreBox);
-            this.Controls.Add(this.ApplyButton);
-            this.Controls.Add(this.selectPboButton);
-            this.Name = "Main";
-            this.Text = "PBO2_tuner_Helper";
-            this.Load += new System.EventHandler(this.Main_Load);
-            this.CoreBox.ResumeLayout(false);
-            this.CoreBox.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            ClientSize = new Size(244, 571);
+            Controls.Add(DeleteTaskButton);
+            Controls.Add(advanceGroupBox);
+            Controls.Add(AdvancedOptionCheckBox);
+            Controls.Add(CoreBox);
+            Controls.Add(ApplyButton);
+            Controls.Add(selectPboButton);
+            MinimumSize = new Size(260, 450);
+            Name = "Main";
+            Text = "PBO2_tuner_Helper";
+            Load += Main_Load;
+            CoreBox.ResumeLayout(false);
+            CoreBox.PerformLayout();
+            advanceGroupBox.ResumeLayout(false);
+            advanceGroupBox.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -297,5 +420,15 @@
         private Label label8;
         private GroupBox CoreBox;
         private Button DeleteTaskButton;
+        private CheckBox AdvancedOptionCheckBox;
+        private Label label9;
+        private Label label10;
+        private Label label11;
+        private Label label12;
+        private TextBox ppt_textBox;
+        private TextBox tdc_textBox;
+        private TextBox edc_textBox;
+        private TextBox fmax_textBox;
+        private GroupBox advanceGroupBox;
     }
 }

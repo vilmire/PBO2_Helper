@@ -8,3 +8,6 @@ ref
 https://github.com/PrimeO7/How-to-undervolt-AMD-RYZEN-5800X3D-Guide-with-PBO2-Tuner/blob/main/README.md
 
 do after ref link(5. How to set PBO2 Tuner manually)
+
+
+230408 - Advance option added. (ppt tdc edc fmax)

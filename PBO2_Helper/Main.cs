@@ -59,7 +59,7 @@ namespace PBO2_Helper
 
             if (result == DialogResult.OK)
             {
-                if(fileDialog.CheckFileExists)
+                if (fileDialog.CheckFileExists)
                 {
                     pboPath = fileDialog.FileName;
                     selectPboButton.Text = pboPath;
@@ -90,8 +90,16 @@ namespace PBO2_Helper
                 int.Parse(core_6_textBox.Text);
                 int.Parse(core_7_textBox.Text);
                 int.Parse(core_8_textBox.Text);
+
+                if (AdvancedOptionCheckBox.Checked)
+                {
+                    int.Parse(ppt_textBox.Text);
+                    int.Parse(tdc_textBox.Text);
+                    int.Parse(edc_textBox.Text);
+                    int.Parse(fmax_textBox.Text);
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 return;
@@ -105,7 +113,7 @@ namespace PBO2_Helper
                 if (existTask != null)
                 {
                     DialogResult dialogResult = MessageBox.Show("PBO2_Tuner Task is Exists. Override?", "Exists!", MessageBoxButtons.YesNo);
-                    if(dialogResult.HasFlag(DialogResult.Yes) == false)
+                    if (dialogResult.HasFlag(DialogResult.Yes) == false)
                     {
                         return;
                     }
@@ -115,8 +123,8 @@ namespace PBO2_Helper
 
                 TaskDefinition td = ts.NewTask();
 
-                
-                
+
+
 
                 td.Principal.LogonType = TaskLogonType.S4U;
 
@@ -132,11 +140,17 @@ namespace PBO2_Helper
                 td.Settings.MultipleInstances = TaskInstancesPolicy.Queue;
                 //td.Settings.AllowHardTerminate = true;
 
-                td.Triggers.Add(new BootTrigger { Enabled = true});
+                td.Triggers.Add(new BootTrigger { Enabled = true });
 
                 td.Triggers.Add(new EventTrigger("System", "Power-Troubleshooter", 1));
 
-                td.Actions.Add(new ExecAction(path:pboPath, arguments:$"{core_1_textBox.Text} {core_2_textBox.Text} {core_3_textBox.Text} {core_4_textBox.Text} {core_5_textBox.Text} {core_6_textBox.Text} {core_7_textBox.Text} {core_8_textBox.Text}"));
+                string args = $"{core_1_textBox.Text.Trim()} {core_2_textBox.Text.Trim()} {core_3_textBox.Text.Trim()} {core_4_textBox.Text.Trim()} {core_5_textBox.Text.Trim()} {core_6_textBox.Text.Trim()} {core_7_textBox.Text.Trim()} {core_8_textBox.Text.Trim()}";
+                if (AdvancedOptionCheckBox.Checked)
+                {
+                    args += $" {ppt_textBox.Text.Trim()} {tdc_textBox.Text.Trim()} {edc_textBox.Text.Trim()} {fmax_textBox.Text.Trim()}";
+                }
+
+                td.Actions.Add(new ExecAction(path: pboPath, arguments: args));
 
                 ts.RootFolder.RegisterTaskDefinition(@"PBO2_Tuner", td);
             }
@@ -181,7 +195,7 @@ namespace PBO2_Helper
                     ts.RootFolder.DeleteTask("PBO2_Tuner");
                     DeleteTaskButton.Enabled = false;
 
-                    if(pboPath != "")
+                    if (pboPath != "")
                     {
                         ApplyButton.Enabled = true;
                         applyToCore1.Enabled = true;
@@ -196,6 +210,11 @@ namespace PBO2_Helper
                     }
                 }
             }
+        }
+
+        private void AdvancedOptionCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            advanceGroupBox.Visible = AdvancedOptionCheckBox.Checked;
         }
     }
 }
