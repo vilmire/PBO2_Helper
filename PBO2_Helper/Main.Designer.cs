@@ -281,14 +281,14 @@
             AdvancedOptionCheckBox.Padding = new Padding(10, 0, 0, 0);
             AdvancedOptionCheckBox.Size = new Size(244, 19);
             AdvancedOptionCheckBox.TabIndex = 21;
-            AdvancedOptionCheckBox.Text = "Advance";
+            AdvancedOptionCheckBox.Text = "Advanced";
             AdvancedOptionCheckBox.UseVisualStyleBackColor = true;
             AdvancedOptionCheckBox.CheckedChanged += AdvancedOptionCheckBox_CheckedChanged;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(26, 119);
+            label9.Location = new Point(26, 112);
             label9.Name = "label9";
             label9.Size = new Size(41, 15);
             label9.TabIndex = 29;
@@ -297,7 +297,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(34, 90);
+            label10.Location = new Point(34, 83);
             label10.Name = "label10";
             label10.Size = new Size(33, 15);
             label10.TabIndex = 28;
@@ -306,7 +306,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(35, 61);
+            label11.Location = new Point(35, 54);
             label11.Name = "label11";
             label11.Size = new Size(31, 15);
             label11.TabIndex = 27;
@@ -315,7 +315,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(34, 32);
+            label12.Location = new Point(34, 25);
             label12.Name = "label12";
             label12.Size = new Size(32, 15);
             label12.TabIndex = 26;
